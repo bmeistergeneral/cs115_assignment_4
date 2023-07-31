@@ -30,9 +30,16 @@ public class Power {
     // Computes and returns base^exp
     // ----------------------------------------------
     public static int power(int base, int exp) {
-        int pow;
         //if the exponent is 0, set pow to 1
         // otherwise set pow to base*base^(exp-1)
         // return pow
+        int pow;
+        if (exp == 0) {
+            pow = 1;
+        } else {
+            pow = base * (base^(exp - 1)); // ?
+            pow = (int)Math.pow(base, exp);
+        }
+        return pow;
     }
 }
