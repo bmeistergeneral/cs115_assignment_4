@@ -37,8 +37,7 @@ public class Power {
         if (exp == 0) {
             pow = 1;
         } else {
-            pow = base * (base^(exp - 1)); // ?
-            pow = (int)Math.pow(base, exp);
+            pow = base * power(base, exp - 1);
         }
         return pow;
     }
