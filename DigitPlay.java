@@ -22,6 +22,7 @@ public class DigitPlay {
 
             System.out.println("\nThe number " + num + " contains " + numDigits(num) + " digits.");
             System.out.println();
+            System.out.println("\nThe sum of the digits of the number " + num + " is " + sumDigits(num));
         }
     }
     // -----------------------------------------------------------
@@ -32,6 +33,13 @@ public class DigitPlay {
             return (1);
         } else {
             return (1 + numDigits(num / 10));
+        }
+    }
+    public static int sumDigits (int num) {
+        if (num < 10) {
+            return num;
+        } else {
+            return (num % 10) + sumDigits(num / 10);
         }
     }
 }
