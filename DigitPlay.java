@@ -9,6 +9,7 @@ public class DigitPlay {
     public static void main (String[] args) {
         int num;   // a number
         Scanner scan = new Scanner(System.in);
+        Scanner scan2 = new Scanner(System.in);
 
         System.out.println();
         System.out.print("Please enter a positive integer: ");
@@ -23,6 +24,14 @@ public class DigitPlay {
             System.out.println("\nThe number " + num + " contains " + numDigits(num) + " digits.");
             System.out.println();
             System.out.println("\nThe sum of the digits of the number " + num + " is " + sumDigits(num));
+            System.out.println("Please input an identification number: ");
+            int id = scan2.nextInt();
+            System.out.println("The sum of the digits in this id is: " + sumDigits(id));
+            if (sumDigits(id) % 7 == 0) {
+                System.out.println("ok");
+            } else {
+                System.out.println("error");
+            }
         }
     }
     // -----------------------------------------------------------
