@@ -10,14 +10,17 @@ import java.util.Scanner;
 public class TestFib {
 
     public static void main(String[] args) {
-        int n, fib;
+        int n, fib1, fib2;
 
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Enter an integer: ");
         n = scan.nextInt();
 
-        fib = Fib.fib1(n);
-        System.out.println("Fib(" + n + ") is " + fib);
+        fib2 = Fib.fib2(n);
+        System.out.println("Fib(" + n + ") is " + fib2);
+
+        fib1 = Fib.fib1(n);
+        System.out.println("Fib(" + n + ") is " + fib1);
     }
 }

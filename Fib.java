@@ -21,9 +21,16 @@ public class Fib {
         }
         return n;
     }
+
     public static int fib2(int n) {
         int[] fibArray = new int[n];
         fibArray[0] = 0;
         fibArray[1] = 1;
+
+        for (int i = 2; i < n; i++) {
+            fibArray[i] = fibArray[i - 1] + fibArray[i - 2];
+        }
+
+        return fibArray[fibArray.length - 1];
     }
 }
