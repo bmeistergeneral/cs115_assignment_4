@@ -30,7 +30,7 @@ public class Fib {
         for (int i = 2; i < n; i++) {
             fibArray[i] = fibArray[i - 1] + fibArray[i - 2];
         }
-
-        return fibArray[fibArray.length - 1];
+        // Changed fib2 to output same value as fib1 by adding two previous elements together.
+        return fibArray[n - 1] + fibArray[n - 2];
     }
 }
