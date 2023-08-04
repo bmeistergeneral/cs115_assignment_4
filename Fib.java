@@ -21,4 +21,9 @@ public class Fib {
         }
         return n;
     }
+    public static int fib2(int n) {
+        int[] fibArray = new int[n];
+        fibArray[0] = 0;
+        fibArray[1] = 1;
+    }
 }
